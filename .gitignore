@@ -1,8 +1,17 @@
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### JVM crash dumps ###
+hs_err_pid*.log
+replay_pid*.log
+
+### Secrets / local config ###
+.env
+*.env
+application-local.properties
 
 ### STS ###
 .apt_generated
@@ -14,7 +23,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -32,25 +41,7 @@ build/
 ### VS Code ###
 .vscode/
 
-# Maven
-target/
-
-# Environment variables / secrets
-.env
-*.env
-
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# Java
+### Java / OS ###
 *.class
-
-# OS
 .DS_Store
 Thumbs.db
-
-
-
-src/main/resources/application.properties
